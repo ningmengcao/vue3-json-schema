@@ -6,7 +6,7 @@
  npm install vue3-json-schema or yarn add vue3-json-schema
 ```
 
-安装使用有问题，请看源码
+安装使用，安装的 element plus、vue3-ace-editor 失效，使用请看源码
 
 ### 使用
 
