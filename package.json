@@ -1,15 +1,24 @@
 {
   "name": "vue3-json-schema",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.8",
+  "main": "lib/vue3-json-schema.umd.min.js",
+  "author": "zhaoshengnan",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue3-json-schema --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "element-plus": "1.1.0-beta.12",
+    "generate-schema": "^2.6.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "sass": "^1.44.0",
+    "vue": "^3.0.0",
+    "vue3-ace-editor": "^2.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -17,8 +26,11 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "sass-loader": "8.x",
+    "scss": "^0.2.4"
   },
   "eslintConfig": {
     "root": true,
@@ -38,5 +50,20 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "简易vue3版 json-schema 编辑器",
+  "license": "ISC",
+  "keywords": [
+    "json-schema",
+    "schema",
+    "vue3-json-schema"
+  ],
+  "rules": {
+    "generator-star-spacing": "off",
+    "no-tabs": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-irregular-whitespace": "off",
+    "no-debugger": "off"
+  }
 }

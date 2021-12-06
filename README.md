@@ -1,24 +1,26 @@
 # vue3-json-schema
 
-## Project setup
+## 安装
+
 ```
-yarn install
+ npm install vue3-json-schema or yarn add vue3-json-schema
 ```
 
-### Compiles and hot-reloads for development
+安装使用有问题，请看源码
+
+### 使用
+
 ```
-yarn serve
+  <vue3-json-schema
+    v-model:schema="jsonSchema"
+    @schema-change="changeSchema"
+  ></vue3-json-schema>
+
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
+1. v-model:schema: 初始类型必须为 object,如： { type: "object", title: "title", properties: {} }
+2. schema-change: 更新 schema 内容
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
