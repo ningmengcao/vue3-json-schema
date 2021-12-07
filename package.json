@@ -1,14 +1,15 @@
 {
   "name": "vue3-json-schema",
-  "version": "0.2.8",
-  "main": "lib/vue3-json-schema.umd.min.js",
+  "version": "0.3.0",
+  "main": "lib/index.umd.min.js",
   "author": "zhaoshengnan",
   "private": false,
+  "repository": "https://github.com/ningmengcao/vue3-json-schema.git",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name vue3-json-schema --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name index --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,7 +18,7 @@
     "lodash": "^4.17.21",
     "mitt": "^3.0.0",
     "sass": "^1.44.0",
-    "vue": "^3.0.0",
+    "vue": "^3.2.24",
     "vue3-ace-editor": "^2.2.1"
   },
   "devDependencies": {
